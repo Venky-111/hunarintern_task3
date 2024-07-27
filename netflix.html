@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="homeBtn">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">TV Shows</a>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Comedy</a>
+                            <a href="#">Drama</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Movies</a>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Comedy</a>
+                            <a href="#">Drama</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">New & Popular</a>
+                        <div class="dropdown-content">
+                            <a href="#">Recently Added</a>
+                            <a href="#">Trending</a>
+                        </div>
+                    </li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <i class="fas fa-search" id="searchIcon"></i>
+                <input type="text" id="searchInput" placeholder="Titles, people, genres">
+                <i class="fas fa-bell"></i>
+                <img src="https://via.placeholder.com/30" alt="User Profile">
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="content">
+            <h1>Watch Anywhere. Cancel Anytime.</h1>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-form">
+                <input type="email" placeholder="Email address">
+                <button>Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section class="movies">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-grid" id="movieGrid">
+            <!-- Add movie and series images here -->
+        </div>
+        <button class="carousel-btn left-btn" id="leftBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn right-btn" id="rightBtn"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Modal for trailer and description -->
+    <div id="trailerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="trailerContainer"></div>
+            <p id="description"></p>
+        </div>
+    </div>
+
+    <script src="netflix.js"></script>
+</body>
+</html>
